@@ -86,6 +86,22 @@ function Container() {
             innovation.
           </p>
         </div>
+
+        <div className="tech-stack">
+          <h4>Techstack:</h4>
+          <ul>
+            <li>Javascript</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>HTML/CSS</li>
+            <li>Jquery</li>
+            <li>handlebarJS</li>
+            <li>ngx-bootstrap</li>
+            <li>electronJS</li>
+            <li>NodeJs</li>
+            <li>JavaSE</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
