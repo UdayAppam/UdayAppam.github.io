@@ -12,11 +12,11 @@ function Sidebar() {
                 <h1>uday_appam</h1>
             </div>
             <div className="contact-list">
-                <SocialIcon fgColor="#fff" url="https://www.linkedin.com/in/uday-appam-707550122/" />
+                <SocialIcon style="{width:'35px', height:'35px'}" fgColor="#fff" url="https://www.linkedin.com/in/uday-appam-707550122/" />
                 {/* <SocialIcon fgColor="#fff" url="https://twitter.com/AppamUday" /> */}
-                <SocialIcon fgColor="#fff" url="https://github.com/UdayAppam" />
-                <SocialIcon fgColor="#fff" url="https://stackoverflow.com/users/6687096/kernal-lora" />
-                <SocialIcon fgColor="#fff" url="https://www.facebook.com/uday.krishnasvs/" />
+                <SocialIcon style="{width:'35px', height:'35px'}" fgColor="#fff" url="https://github.com/UdayAppam" />
+                <SocialIcon style="{width:'35px', height:'35px'}" fgColor="#fff" url="https://stackoverflow.com/users/6687096/kernal-lora" />
+                <SocialIcon  style="{width:'35px', height:'35px'}" fgColor="#fff" url="https://www.facebook.com/uday.krishnasvs/" />
 
 
             </div>
