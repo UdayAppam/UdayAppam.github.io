@@ -1,17 +1,21 @@
-.content-container{
-    background: #74686826;
-    float: right;
-    width: 75%;
-    height: 100vh;
-    padding: 32px;
-
+.content-container {
+  background: #74686826;
+  float: right;
+  width: 75%;
+  padding: 32px;
 }
 .introduction {
-    text-align: center;
-    color: #636060;
+  text-align: center;
+  color: #636060;
 }
-.sub-header{
-    font-size: 1.3rem;
-    font-weight: lighter;
-    color: #505050;
+.sub-header {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #505050;
+}
+.abcIntro,
+.self-intro,
+.tech-stack,
+.exp-timeline {
+  padding: 15px;
 }

@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+}
+
+/* ul {
+  display: inline-flex;
+  flex-flow: column nowrap;
+} */
+
+ul li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.list-label {
+  text-align: left;
+  padding-right: 35px;
+  width: 20%;
+}
+.circles-container {
+  display: flex;
+}
+
+.skill-circle {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #988f8f;
+}
+.active {
+  background: green;
+}
