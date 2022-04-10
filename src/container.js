@@ -254,6 +254,14 @@ function Container() {
           {' '}
           <b> My Moto: Analysis, Bluprint, Code</b>
         </p>
+        <div>
+          <img
+            src="./ABC.png"
+            title="Analysis, Bluprint, Code"
+            width="600"
+            height="400"
+          />
+        </div>
       </div>
       <div className="abcIntro">
         <p>
