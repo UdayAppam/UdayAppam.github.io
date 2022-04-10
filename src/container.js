@@ -258,7 +258,7 @@ function Container() {
           <img
             src="./ABC.png"
             title="Analysis, Bluprint, Code"
-            width="600"
+            width="100%"
             height="400"
           />
         </div>
