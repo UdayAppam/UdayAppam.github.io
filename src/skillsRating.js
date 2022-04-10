@@ -14,13 +14,10 @@ function SkillsRating() {
         rating: 8,
       },
       {
-        language: 'React',
-        rating: 5,
-      },
-      {
         language: 'HTML/CSS',
-        rating: 7.5,
+        rating: 8,
       },
+
       {
         language: 'Jquery',
         rating: 7,
@@ -36,6 +33,10 @@ function SkillsRating() {
       {
         language: 'electronJS',
         rating: 6,
+      },
+      {
+        language: 'React',
+        rating: 5,
       },
       {
         language: 'NodeJs',
@@ -73,8 +74,8 @@ function SkillsRating() {
     );
   });
   return (
-    <div>
-      <h4>Technical skills:</h4>
+    <div className="txt-center">
+      <h4>Technical Skills</h4>
       <ul>{skillItems}</ul>
     </div>
   );

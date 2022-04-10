@@ -1,8 +1,18 @@
 import React from 'react';
 import './sidebar.css';
 import { SocialIcon } from 'react-social-icons';
+import ProfileDialog from './profileDialog';
 
 function Sidebar() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div class="sidebar">
       <div className="sidebar-logo">
@@ -28,14 +38,18 @@ function Sidebar() {
         />
       </div>
       <nav className="sidebar-nav">
-        <a href="">Home</a>
+        <a href="#introduction">Home</a>
+        <a href="#techSkills">Skills</a>
 
-        <a href="">Skills</a>
+        <a href="#projectexp">Projects & Experience</a>
 
-        <a href="">Experience</a>
-
-        <a href="">Projects</a>
+        <a className="cursor" onClick={handleClickOpen}>
+          Resume
+        </a>
       </nav>
+      <div>
+        <ProfileDialog isOpen={open} handleClose={handleClose} />
+      </div>
       <div className="copy-rights">
         <p>© {new Date().getFullYear()}. All rights reserved</p>
       </div>

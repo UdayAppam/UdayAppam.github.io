@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './container.css';
 import SkillsRating from './skillsRating';
+import CustomizedDialogs from './rolesDialog';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -29,6 +30,34 @@ function Container() {
       designation: 'Senior Development Engineer',
       company: 'Pramati Software Pvt Ltd',
       companyUrl: 'https://pramati.com/',
+      product: 'Wavemaker',
+      productTechnologies:
+        ' Angular, TypeScript, HTML5, CSS3, JavaScript,  React,  Java, Springs',
+      roles: (
+        <Fragment>
+          <li>
+            Responsible for the new widgets and delivery for the weekly and
+            major releases.{' '}
+          </li>
+          <li>
+            {' '}
+            Guiding the junior developers to make sure they are not stuck
+            technically.{' '}
+          </li>
+          <li> Giving suggestions to improve the user experience(UX/UI). </li>
+          <li>Updating the project status to managers. </li>
+          <li>
+            {' '}
+            Data formats for table and preparing the npm packages and push to
+            npm account for the development.
+          </li>
+          <li> Ensuring high performance widgets for the wavemaker.</li>
+          <li>
+            Coordinating the work flow between the graphic designer, API team.{' '}
+          </li>
+          <li>Communicating with external web services.</li>{' '}
+        </Fragment>
+      ),
       projectIntro: (
         <p>
           I have worked with the product named{' '}
@@ -49,6 +78,28 @@ function Container() {
       designation: 'R & D Engineer',
       company: 'NextEducation Pvt Ltd',
       companyUrl: 'https://www.nexteducation.in/',
+      product: 'NextTools',
+      productTechnologies: 'HTML5, CSS3, JavaScript,   Angular',
+      roles: (
+        <Fragment>
+          <li> Delivering a complete front end application. </li>
+          <li>Managing the team towards productivity.</li>
+          <li>
+            Guiding the junior developers to make sure they are not stuck
+            technically.{' '}
+          </li>
+          <li>Giving suggestions to improve the user experience(UX/UI). </li>
+          <li>Updating the project status to managers. </li>
+          <li>Ensuring high performance web application.</li>
+          <li>
+            Writing tested, idiomatic, and documented React, HTML5 and CSS3
+          </li>
+          <li>
+            Coordinating the work flow between the graphic designer, API team.{' '}
+          </li>
+          <li>Communicating with external web services.</li>
+        </Fragment>
+      ),
       projectIntro: (
         <p>
           I got the opportunity to work on the product called NextTools which
@@ -63,6 +114,29 @@ function Container() {
       designation: 'Associate Software Engineer',
       company: 'Osmosys Software Solutions',
       companyUrl: 'https://osmosys.co/',
+      product: 'PineStem',
+      productTechnologies:
+        'Bootstrap,HTML5, CSS3, Angular material UI, JavaScript, JQuery, Angular 1.5, .Net web API(REST)',
+      roles: (
+        <Fragment>
+          <li>Delivering a complete front end application. </li>
+          <li>Ensuring high performance web application.</li>
+          <li>
+            Involved writing web API methods required for the project and
+            database queries for CRUD operations.{' '}
+          </li>
+          <li>Involved in the Authorization and Authentication process.</li>
+          <li>Updating the project status to managers. </li>
+          <li>Ensuring high performance web application.</li>
+          <li>
+            Writing tested, idiomatic, and documented React, HTML5 and CSS3
+          </li>
+          <li>
+            Coordinating the work flow between the graphic designer, API team.{' '}
+          </li>
+          <li>Communicating with external web services.</li>
+        </Fragment>
+      ),
       projectIntro: (
         <p>
           <a href="https://pinestem.com/" target="_blank">
@@ -153,13 +227,27 @@ function Container() {
           </h4>
         </div>
         {exp.projectIntro}
+        <div className="txt-center">
+          {/* <Button color="primary">Roles & Responsibility</Button> */}
+          {exp.roles ? (
+            <CustomizedDialogs
+              productName={exp.product}
+              client={exp.company}
+              designation={exp.designation}
+              technologies={exp.productTechnologies}
+              roles={exp.roles}
+            />
+          ) : (
+            ''
+          )}
+        </div>
       </VerticalTimelineElement>
     );
   });
 
   return (
     <div className="content-container">
-      <div className="introduction">
+      <div id="introduction" className="introduction">
         <h1>Hello,</h1>
         <h2 className="sub-header">I'm Uday. Associate Technical Lead </h2>
         <p>
@@ -241,11 +329,17 @@ function Container() {
           innovation.
         </p>
       </div>
+      <div class="certifications">
+        <p>
+          Did I mention that am{' '}
+          <i> Microsoft certified in HTML5 and CSS3, JavaScript (70-480) </i> ?{' '}
+        </p>
+      </div>
 
-      <div className="tech-stack">
+      <div id="techSkills" className="tech-stack">
         <SkillsRating />
       </div>
-      <div className="exp-timeline">
+      <div id="projectexp" className="exp-timeline">
         <div className="txt-center">
           {' '}
           <h3>Professional Work experience & Education</h3>
