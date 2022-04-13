@@ -259,7 +259,7 @@ function Container() {
             src="./ABC.png"
             title="Analysis, Bluprint, Code"
             width="100%"
-            height="400"
+            height="600"
           />
         </div>
       </div>
