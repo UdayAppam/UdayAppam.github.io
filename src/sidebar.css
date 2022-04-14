@@ -33,7 +33,7 @@
 }
 
 .sidebar-nav {
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   display: flex;
   flex-direction: column;
   width: 100%;
